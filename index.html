@@ -1,1 +1,184 @@
-blog
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+    	<script language=javascript> 
+	var t1 = new Date().getTime(); 
+	</script> 
+        <title>Mcljudge's Home</title>
+        <meta name="ujianVerification" content="3b1cac0f3b1c45c0b3c05521b55c212e" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="GC's Web" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background:#fff url(images/bg.png) no-repeat top left;
+            }
+            .title{
+                width:548px;
+                height:119px;
+                position:absolute;
+                top:400px;
+                left:150px;
+                background:transparent url(images/title.png) no-repeat top left;
+            }
+            #content{
+                margin:0 auto;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <div class="title"></div>
+		<div class="clock">
+		   <div id="Date"></div>
+		      <ul>
+		          <li id="hours"></li>
+		          <li id="point">:</li>
+		          <li id="min"></li>
+		          <li id="point">:</li>
+		          <li id="sec"></li>
+		      </ul>
+		</div>
+            <div class="navigation" id="nav">
+                <div class="item user">
+                    <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Abouts</h2>
+                    <ul>
+                        <li><a href="#">About me</a></li>
+						<li><a href="#">Time Line</a></li>
+                    </ul>
+                </div>
+                <div class="item home">
+                    <img src="images/bg_home.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="/blog/" class="icon"></a>
+                    <h2>Home</h2>
+                    <ul>
+                        <li><a href="/blog/">Blogs</a></li>
+						<li><a href="/blog/">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="item share">
+                    <img src="images/bg_share.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="/share/" class="icon"></a>
+                    <h2>Codes</h2>
+                    <ul>
+                        <li><a href="/share/">GitHub</a></li>
+						<li><a href="/share/">Gae Study</a></li>
+                    </ul>
+                </div>
+                <div class="item camera">
+                    <img src="images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Fotos</h2>
+                    <ul>
+						<li><a href="#">练习集</a></li>
+                        <li><a href="#">写真集</a></li>
+                    </ul>
+                </div>
+                <div class="item fav">
+                    <img src="images/bg_fav.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Musics</h2>
+                    <ul>
+					<li><a href="#">Easy FM</a></li>
+                    <li><a href="#">无损音乐</a></li>
+                    </ul>
+                </div>
+
+				  <div class="item products">
+                    <img src="images/bg_products.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Products</h2>
+                    <ul>
+					<li><a href="#">爱K客</a></li>
+                    <li><a href="#">豆呸嗑</a></li>
+					<li><a href="#">声音碎片</a></li>
+					<li><a href="#">爱豆瓣</a></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- The JavaScript -->
+         <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#nav > div').hover(
+                function () {
+                    var $this = $(this);
+                    $this.find('img').stop().animate({
+                        'width'     :'199px',
+                        'height'    :'199px',
+                        'top'       :'-25px',
+                        'left'      :'-25px',
+                        'opacity'   :'1.0'
+                    },500,'easeOutBack',function(){
+                        $(this).parent().find('ul').fadeIn(700);
+                    });
+
+                    $this.find('a:first,h2').addClass('active');
+                },
+                function () {
+                    var $this = $(this);
+                    $this.find('ul').fadeOut(500);
+                    $this.find('img').stop().animate({
+                        'width'     :'52px',
+                        'height'    :'52px',
+                        'top'       :'0px',
+                        'left'      :'0px',
+                        'opacity'   :'0.1'
+                    },5000,'easeOutBack');
+
+                    $this.find('a:first,h2').removeClass('active');
+                }
+            );
+            });
+        </script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+	var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+	var newDate = new Date();
+	newDate.setDate(newDate.getDate());
+	$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+	
+	setInterval( function() {
+		var seconds = new Date().getSeconds();
+		$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+		},1000);
+		
+	setInterval( function() {
+		var minutes = new Date().getMinutes();
+		$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+	    },1000);
+		
+	setInterval( function() {
+		var hours = new Date().getHours();
+		$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+	    }, 1000);	
+	});
+	</script>
+	<div style="position:fixed;right:10px;bottom:10px;">
+	<div id="TimeShow"></div>
+	</div>
+	<SCRIPT LANGUAGE="JavaScript"> 
+	window.onload = function() 
+	{ 
+	document.getElementById("TimeShow").innerHTML = "加载本页耗时 "+ (new Date().getTime()-t1) +" 毫秒"; 
+	} 
+	</SCRIPT> 
+    </body>
+</html>
