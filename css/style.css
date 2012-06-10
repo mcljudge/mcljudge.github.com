@@ -80,13 +80,13 @@ a.icon{
     position:absolute;
     width:147px;
     height:52px;
-    color:#222;
+    color:#fff;
     font-size:18px;
     top:0px;
     left:52px;
     text-indent:10px;
     line-height:52px;
-    text-shadow:1px 1px 1px #fff;
+    text-shadow:1px 1px 1px #222;
     text-transform:uppercase;
 }
 .item h2.active{
