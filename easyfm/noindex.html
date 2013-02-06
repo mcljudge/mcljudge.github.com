@@ -8,10 +8,8 @@
 <link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 #title_mon{border:3px solid #3399FF;text-align:center;}
-#title_mon h2{display:block;font-size:18px;color:#FF3300;}
-#title_mon .le{display:block;float:left;margin-left:5px;font-size:14px;}
-#title_mon .ri{display:block;float:right;margin-right:5px;font-size:14px;}
-#title_mon a{color:#3399FF;text-decoration:none;}
+#title_mon h2{font-size:18px;color:#FF3300;clear:both;}
+#title_mon a{font-size:14px;color:#3399FF;text-decoration:none;}
 #title_mon a:hover{color:#FF6600;text-decoration:underline;}
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
@@ -126,7 +124,12 @@ $(document).ready(function(){
 
 		<div id="easyfm_container" class="jp-audio">
 
-		<div id="title_mon"><span class="le"><a href="#"><=Last Month </a></span><h2>EZFM-LIST-2013-January</h2><span class="ri"><a href="#">Next Month=></a></span>
+		<div id="title_mon">
+		<span><a href="#" style="float:left;margin-left:10px;"><=Last Month </a></span>
+		<span><a href="#" style="float:right;20px;">Next Month=></a></span>
+		<div><h2>EZFM-LIST-2013-January</h2></div>
+
+		
 		
 		</div>
 
