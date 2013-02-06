@@ -7,11 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-#title_mon{border:5px solid blue;text-align:center;}
-#title_mon h2{font-size:18px;}
-#title_mon span{magrin-right:10px;font-size:16px;}
-#title_mon a{color:green;text-decoration:none;}
-#title_mon a:hover{color:red;text-decoration:underline;}
+#title_mon{border:3px dashed blue;text-align:center;}
+#title_mon h2{font-size:18px;color:#FF3300;}
+#title_mon .le{float:left;magrin-left:5px;font-size:16px;}
+#title_mon .ri{float:right;magrin-right:5px;font-size:16px;}
+#title_mon a{display:block;color:#3399FF;text-decoration:none;}
+#title_mon a:hover{color:#FF6600;text-decoration:underline;}
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
