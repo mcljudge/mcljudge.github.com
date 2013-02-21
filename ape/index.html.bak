@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>Mcljudge's APE List </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#title_mon{text-align:center;margin-bottom:5px;}
+#title_mon h2{font-size:18px;color:#FF3300;clear:both;}
+#title_mon a{font-size:14px;color:#3399FF;text-decoration:none;}
+#title_mon a:hover{color:#FF6600;text-decoration:underline;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#easyfm_id",
+		cssSelectorAncestor: "#easyfm_container"
+	}, [
+			{
+			title:"Numb",
+			mp3:"data/Numb.mp3"
+		},
+		
+		 {
+			title:"上海1943",
+			mp3:"data/shanghai1943.mp3"
+		}
+
+	
+	
+	], {
+		swfPath: "js/",
+		supplied: "mp3",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+
+
+
+		<div id="easyfm_id" class="jp-jplayer"></div>
+		
+
+		<div id="easyfm_container" class="jp-audio">
+
+	
+
+
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+					</div>
+						<div id="intro" style="color:#E6421A;float:right;border:2px solid white;width:160px;height:80px;margin-top:-110px;">
+				一月份，哈哈
+				</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+				</div>
+			
+				<div class="jp-playlist">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+</body>
+
+</html>

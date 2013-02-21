@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+
+<title>Easy FM On Line </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#easyfm_id",
+		cssSelectorAncestor: "#easyfm_container"
+	}, [
+			{
+			title:"别人答应过你的事情",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-04.m4a"
+		},
+			{
+			title:"2013-01-08",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/2013/jan/2013-01-08.m4a"
+		},
+		{
+			title:"最近收到的好消息",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-05.m4a"
+		},
+			{
+			title:"怎么被别人夸的",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-06.m4a"
+		},
+			{
+			title:"什么事情会让你犯困",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-07.m4a"
+		},
+		{
+			title:"高反差事件",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-10.m4a"
+		},
+	      {
+			title:"机场购物经历",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-20.m4a"
+		},
+		 {
+			title:"倒时差",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-21.m4a"
+		},
+		 {
+			title:"开学贵重物件",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-24.m4a"
+		},
+		 {
+			title:"口香糖",
+			m4a:"http://easyfm.mcljudge.com/mu/ezfm/sep/2012-09-25.m4a"
+		}
+
+	
+	
+	], {
+		swfPath: "http://www.mcljudge.com/easyfm/js/",
+		supplied: "m4a",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+
+		<div id="easyfm_id" class="jp-jplayer"></div>
+
+		<div id="easyfm_container" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+					</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+</body>
+
+</html>
