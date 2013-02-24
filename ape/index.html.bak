@@ -61,7 +61,7 @@ $(document).ready(function(){
 		},
 		{
 			title:"ありがとうーー筷子兄弟",
-			mp3:"http://ape.mcljudge.com/mu/ape/arigatok.mp3"
+			mp3:"http://ape.mcljudge.com/mu/ape/arigato.mp3"
 		},
 		{
 			title:"ありがとうーー吉亜子",
