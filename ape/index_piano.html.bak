@@ -23,6 +23,10 @@ $(document).ready(function(){
 		jPlayer: "#easyfm_id",
 		cssSelectorAncestor: "#easyfm_container"
 	}, [
+		{
+			title:"突然其来的爱情",
+			mp3:"http://ape.mcljudge.com/mu/ape/Tokyo.mp3"
+		},
 			{
 			title:"夜的钢琴曲",
 			mp3:"http://ape.mcljudge.com/mu/ape/NightPiano.mp3"
