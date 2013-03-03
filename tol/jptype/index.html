@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+  <head>
+    <title>日语打字练习,日语打字软件</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="keyword" content="日语打字软件，日语打字练习，日语打字在线练习"/>
+	<meta name="keyword" content="适合中国人使用的，日语打字练习，免费的日语打字软件，免费的日语打字练习，Japaness Typing Soft ware,KANA 打法，KANA日文打字练习"/>
+    <link rel="stylesheet" type="text/css" href="css/typist_js.css" />
+    <script type="text/javascript" src="js/typist_idx.js"></script>
+    <script type="text/javascript" src="js/typist_js.js"></script>
+    <style type="text/css">
+      body {font-family: 'Times New Roman', serif}
+      .typist-controls {
+        float: left;
+        font-family: sans-serif;
+        font-size: 75%;
+        margin: 0.3em 0;
+      }
+      #typist-options dl {
+        margin: 0;
+        padding: 0;
+      }
+      #typist-options dt,dd {
+        display: inline;
+        margin: 0 0 0 0.5em;
+      }
+      #typist-options dt {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body onload="load_typist(document.getElementById('screen'), document.getElementById('vbell'), [document.getElementById('kbd_jp106'), document.getElementById('kbd_us'), document.getElementById('kbd_jpc')]);">
+    <h1>Typist on Browser</h1>
+	<h2>日语打字练习。假名打字练习，KANA打法。<p>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;首先，对那个国产的日语打字通表示严厉的BS。只让适用，不开源不免费。
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;同时，也对自己表示BS，因为一直说要破解来着，一直都破解不了。
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;最后，在奉上这么一个在线的时时刻刻打字练习。版权是台湾的某个高手的，我只更改了键盘设定，原版的不支持国产键盘（KANA不支持，ROMAJI就不太清楚了，我用的是KANA）</h2>
+    <div id="typist-options-hide" class="typist-controls" style="display: block">
+      <a href="javascript:void(0)" onclick="this.parentNode.style.display='none'; document.getElementById('typist-options').style.display='block'">>>键盘设定</a>
+    </div>
+    <div id="typist-options" class="typist-controls" style="display: none">
+      <fieldset><legend><a href="javascript:void(0)" onclick="document.getElementById('typist-options').style.display='none'; document.getElementById('typist-options-hide').style.display='block';">键盘设定</a></legend>
+        <div id="typist-options-selects">
+          <dl>
+            <dt>キーボードのタイプ:</dt>
+            <dd><input type="radio" name="keytype" id="kbd_jp106" value="j"><label for="kbd_jp106">日本語106</label></dd>
+            <dd><input type="radio" name="keytype" id="kbd_us" value="e"><label for="kbd_us">中国键盘</label></dd>
+            <dd><input type="radio" name="keytype" id="kbd_jpc" value="k"><label for="kbd_jpc">国産パソコン(PC98等)</label></dd>
+          </dl>
+          <dl>
+            <dt><label for="vbell">ヴィジュアル?ベル:</label></dt>
+            <dd><input type="checkbox" name="vbell" id="vbell" value="1"></dd>
+          </dl>
+        </div>
+      </fieldset>
+    </div>
+    <br clear="all">
+    <div id="screen"></div>
+  </body>
+</html>
